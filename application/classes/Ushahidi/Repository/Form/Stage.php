@@ -18,8 +18,6 @@ use Ushahidi\Core\Traits\PostValueRestrictions;
 use Ushahidi\Core\Traits\UserContext;
 
 use Ushahidi\Core\Traits\AdminAccess;
-use Ushahidi\Core\Traits\PermissionAccess;
-use Ushahidi\Core\Traits\Permissions\ManagePosts;
 
 class Ushahidi_Repository_Form_Stage extends Ushahidi_Repository implements
 	FormStageRepository
@@ -30,12 +28,6 @@ class Ushahidi_Repository_Form_Stage extends Ushahidi_Repository implements
 
 	// Checks if user is Admin
 	use AdminAccess;
-
-	// Provides `hasPermission`
-	use PermissionAccess;
-
-	// Provides `getPermission`
-	use ManagePosts;
 
 	protected $form_id;
 	protected $form_repo;

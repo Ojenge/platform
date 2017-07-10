@@ -19,6 +19,12 @@ class Permission extends StaticEntity
 	protected $name;
 	protected $description;
 
+	// Standard permissions names
+	const DataImport      = 'Bulk Data Import';
+	const ManagePosts     = 'Manage Posts';
+	const ManageSettings  = 'Manage Settings';
+	const ManageUsers     = 'Manage Users';
+
 	// DataTransformer
 	public function getDefinition()
 	{
