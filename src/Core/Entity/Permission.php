@@ -24,6 +24,7 @@ class Permission extends StaticEntity
 	const ManagePosts     = 'Manage Posts';
 	const ManageSettings  = 'Manage Settings';
 	const ManageUsers     = 'Manage Users';
+	const EditOwnPosts    = 'Edit their own posts';
 
 	// DataTransformer
 	public function getDefinition()
